@@ -22,9 +22,9 @@ import numpy as np
 import pandas as pd
 
 
-# PUTANJE_DO_BAZE = "/Users/4c/Desktop/GHQ/data/loto7_4708_k85.csv"
-# PUTANJE_DO_BAZE = "/Users/4c/Desktop/GHQ/data/loto7_4708_k85_loto_2976.csv"
-PUTANJE_DO_BAZE = "/Users/4c/Desktop/GHQ/data/loto7_4708_k85_loto_plus_1732.csv"
+# PUTANJE_DO_BAZE = "/data/loto7_4708_k85.csv"
+# PUTANJE_DO_BAZE = "/data/loto7_4708_k85_loto_2976.csv"
+PUTANJE_DO_BAZE = "/data/loto7_4708_k85_loto_plus_1732.csv"
 
 
 def generisi_next_predikciju_v4(putanja_csv):
@@ -152,17 +152,17 @@ df_rezultati_v4 = generisi_next_predikciju_v4(PUTANJE_DO_BAZE)
 """
 ==================================================
   [LQG v4 - Ensemble Index] KONAČNA PREDREČENA KOMBINACIJA:
-  [8, 16, 18, 20, 23, 24, 26]
+  [8, x, 18, y, 23, z, 26]
 ==================================================
 
 Top 7 rangiranih unutar hibridne mreže:
  Broj  Hibridni_Indeks  v1_Norm_Amplituda  v2_Norm_Povrsina  v3b_Norm_Disbalans
    23         0.479200           0.921473          0.847191            0.109927
    26         0.406522           0.629777          1.000000            0.298584
-   24         0.232004           0.473577          0.540450            0.197230
+    z         0.232004           0.473577          0.540450            0.197230
     8         0.226762           1.000000          0.748790            0.681886
-   16         0.212624           0.473967          0.510300            0.215725
-   20         0.190680           0.031391          0.461004            0.000000
+    x         0.212624           0.473967          0.510300            0.215725
+    y         0.190680           0.031391          0.461004            0.000000
    18         0.161345           0.404244          0.315611            0.114371
 
 
@@ -173,17 +173,17 @@ Top 7 rangiranih unutar hibridne mreže:
 
 ==================================================
   [LQG v4 - Ensemble Index] KONAČNA PREDREČENA KOMBINACIJA:
-  [8, 16, 21, 22, 23, 24, 26]
+  [8, x, 21, y, 23, z, 26]
 ==================================================
 
 Top 7 rangiranih unutar hibridne mreže:
  Broj  Hibridni_Indeks  v1_Norm_Amplituda  v2_Norm_Povrsina  v3b_Norm_Disbalans
    23         0.439157           0.731192          0.833124            0.100827
    26         0.380756           0.488755          1.000000            0.292488
-   16         0.353269           0.632148          0.782272            0.215175
-   24         0.344410           0.574968          0.765202            0.191661
+    x         0.353269           0.632148          0.782272            0.215175
+    z         0.344410           0.574968          0.765202            0.191661
     8         0.292581           1.000000          0.918980            0.687526
-   21         0.282161           0.586295          0.412255            0.000000
+    y         0.282161           0.586295          0.412255            0.000000
    22         0.266110           0.777614          0.367303            0.090834
 
 
@@ -194,18 +194,18 @@ Top 7 rangiranih unutar hibridne mreže:
 
 ==================================================
   [LQG v4 - Ensemble Index] KONAČNA PREDREČENA KOMBINACIJA:
-  [10, 11, 18, 23, 25, 26, 29]
+  [10, x, 18, y, 25, z, 29]
 ==================================================
 
 Top 7 rangiranih unutar hibridne mreže:
  Broj  Hibridni_Indeks  v1_Norm_Amplituda  v2_Norm_Povrsina  v3b_Norm_Disbalans
-   23         0.550394           1.000000          1.000000            0.124015
+    y         0.550394           1.000000          1.000000            0.124015
    18         0.319818           0.708335          0.558196            0.112818
-   11         0.292485           0.934297          0.705939            0.441875
+    x         0.292485           0.934297          0.705939            0.441875
    29         0.245842           0.637993          0.727185            0.431577
    25         0.228649           0.637643          0.479338            0.226536
    10         0.224357           0.658087          0.754750            0.522900
-   26         0.217047           0.778636          0.460860            0.307561
+    z         0.217047           0.778636          0.460860            0.307561
 """
 
 
@@ -247,9 +247,4 @@ Sve četiri verzije (v1, v2, v3b, v4) su sada kompletirane, kodirane i istestira
 
 Top 7 brojeva je zauzelo vrh tabele nakon hibridnog peglanja težina. 
 Vrednosti hibridnog indeksa za vodeće čvorove. 
-
-
-
-• Preći na potpuno novu oblast teorijske fizike ili napredne matematike 
-  (npr. p-adic analiza, teorija struna, ili kvantni hodovi/Quantum Walks)
 """
